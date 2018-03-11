@@ -50,7 +50,7 @@ public class TestRoom {
         aBedRoom.addGuest(aGuest);
         aBedRoom.addGuest(aGuest);
         aBedRoom.addGuest(aGuest);
-        assertEquals(2, aBedRoom.getCapacity());
+        assertEquals(2, aBedRoom.numberOfOccupants());
     }
 
     @Test

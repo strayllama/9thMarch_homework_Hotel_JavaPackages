@@ -27,22 +27,23 @@ public abstract class Room {
     }
 
     public ArrayList<Guest> getGuests() {
-        return guests;
+        return this.guests;
+    }
+
+    public int numberOfOccupants() {
+        return this.guests.size();
     }
 
     // SETTER METHODS
     public void addGuest(Guest aGuest) {
-        if (guests.size() < this.capacity) {
-            guests.add(aGuest);
+        if (this.guests.size() < this.capacity) {
+            this.guests.add(aGuest);
         }
     }
 
-    // STRING INFO METHODS
 
-
-    @Override
-    public String toString() {
-        return super.toString();
+    public void removeGuests() {
+        this.guests.clear();
     }
 
 } // end abstract class Room
